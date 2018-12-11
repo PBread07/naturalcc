@@ -1,3 +1,4 @@
+# Work with Python 3.6
 import discord
 from datetime import datetime, timedelta
 
@@ -50,11 +51,9 @@ async def on_message(message):
         event_time_EST = datetime.strftime(
             event_datetime + timedelta(hours=-4), '%d %b %Y %I:%M%p') + ' EST'
 
-        embed = discord.Embed(title="Bandos Clan Event:", color=0x00ff00)
+        embed = discord.Embed(title="!Event:", color=0x00ff00)
         embed.add_field(
-            name="Requirements:", value='http://prntscr.com/ltbppi', inline=False)
-        embed.add_field(
-            name="name="Suggested Gear:", value=‘**80+ Hitpoints**\n**- 80+ Attack**\n**- 70+ Strength (Required, 80+ Recommended)**\n**- 70+ Defence (90+ if Tank)**\n**- 80+ Range**\n**- 70+ Magic (75+ Recommended)**\n**- 44+ Prayer (Eagle Eye, 70+ Piety, 74+ Rigour)**', inline=False)
+            name="Requirements", value='**- Requirement 1**\n**- Requirement 2**\n**- Requirement 3**\n**- Requirement 4**', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
         old_msg=await client.send_message(message.channel, embed=embed)

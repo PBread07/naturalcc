@@ -54,7 +54,7 @@ async def on_message(message):
         embed.add_field(
             name="Requirements & Suggested Gear:", value='70 Str', inline=False)
         embed.add_field(
-            name="Ranged Tank", value='**- Rich http://prntscr.com/ltbiyt**\n**- Poor**\n**- http://prntscr.com/ltbk3j**\n**- Requirement 4**', inline=False)
+            name="Ranged Tank", value='**- Rich http://prntscr.com/ltbiyt**\n**- Poor http://prntscr.com/ltbk3j**\n**- text**\n**- Requirement 4**', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
         old_msg=await client.send_message(message.channel, embed=embed)

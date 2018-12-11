@@ -54,7 +54,7 @@ async def on_message(message):
         embed.add_field(
             name="Requirements:", value='http://prntscr.com/ltbppi', inline=False)
         embed.add_field(
-            name="Suggested Gear:", value='**- http://prntscr.com/ltbp3x**\n**- Poor http://prntscr.com/ltbk3j**\n**- text**\n**- Requirement 4**', inline=False)
+            name="name="Suggested Gear:", value=‘**80+ Hitpoints**\n**- 80+ Attack**\n**- 70+ Strength (Required, 80+ Recommended)**\n**- 70+ Defence (90+ if Tank)**\n**- 80+ Range**\n**- 70+ Magic (75+ Recommended)**\n**- 44+ Prayer (Eagle Eye, 70+ Piety, 74+ Rigour)**', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
         old_msg=await client.send_message(message.channel, embed=embed)

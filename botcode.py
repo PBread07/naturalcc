@@ -50,7 +50,7 @@ async def on_message(message):
         event_time_EST = datetime.strftime(
             event_datetime + timedelta(hours=-4), '%d %b %Y %I:%M%p') + ' EST'
 
-        embed = discord.Embed(title="!Event:", color=0x00ff00)
+        embed = discord.Embed(title="Bandos Clan Event:", color=0x00ff00)
         embed.add_field(
             name="Requirements", value='**- Requirement 1**\n**- Requirement 2**\n**- Requirement 3**\n**- Requirement 4**', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)

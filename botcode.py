@@ -52,9 +52,9 @@ async def on_message(message):
 
         embed = discord.Embed(title="Bandos Clan Event:", color=0x00ff00)
         embed.add_field(
-            name="Requirements & Suggested Gear:", value='70 Str', inline=False)
+            name="Requirements:", value='http://prntscr.com/ltbppi', inline=False)
         embed.add_field(
-            name="Ranged Tank", value='**- Rich http://prntscr.com/ltbiyt**\n**- Poor http://prntscr.com/ltbk3j**\n**- text**\n**- Requirement 4**', inline=False)
+            name="Suggested Gear:", value='**- http://prntscr.com/ltbp3x**\n**- Poor http://prntscr.com/ltbk3j**\n**- text**\n**- Requirement 4**', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
         old_msg=await client.send_message(message.channel, embed=embed)

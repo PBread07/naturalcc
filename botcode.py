@@ -92,7 +92,7 @@ async def on_message(message):
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 
         embed.add_field(
-            name="**Recommended Levels:**", value='75+ Hitpoints\n75+ Attack\75+ Strength\n75+ Defence\n85+ Range\n75+ Magic\n44+ Prayer (Eagle Eye, 70+ Piety, 74+ Rigour)\n', inline=False)
+            name="**Recommended Levels:**", value='75+ Hitpoints\n75+ Attack\n75+ Strength\n75+ Defence\n85+ Range\n75+ Magic\n44+ Prayer (Eagle Eye, 70+ Piety, 74+ Rigour)\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 

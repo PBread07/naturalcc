@@ -63,7 +63,7 @@ async def on_message(message):
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
 
         embed.add_field(
-            name="**Suggested Gear:**", value='Bandos Basic Tank: http://prntscr.com/lu5tlb\nBandos Advanced Tank: http://prntscr.com/lu5twd\nBandos Melee Attacker: http://prntscr.com/lu5ubt\nBandos Ranged Attacker: http://prntscr.com/lu5uoi\nBandos Blowpipe Attacker: http://prntscr.com/lu7xo5\n*If using a blowpipe take addy/better darts\n*If using a crossbow use Diamond bolts (e) & Ruby bolts (e)\n *Spec weapons best to worst DWH>BGS or alternatively Crystall Halberd>Dragon Halberd', inline=False)
+            name="**Suggested Gear:**", value='Bandos Basic Tank: http://prntscr.com/lu5tlb\nBandos Advanced Tank: http://prntscr.com/lu5twd\nBandos Melee Attacker: http://prntscr.com/lu5ubt\nBandos Ranged Attacker: http://prntscr.com/lu5uoi\nBandos Blowpipe Attacker: http://prntscr.com/lu7xo5\n*If using a blowpipe take addy/better darts\n*If using a crossbow use Diamond bolts (e) & Ruby bolts (e)\n *Spec weapons best to worst DWH>BGS or alternatively Crystal Halberd(i)>Dragon Halberd', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
 
@@ -74,6 +74,38 @@ async def on_message(message):
         old_msg=await client.send_message(message.channel, embed=embed)
 
 
+
+    elif message.content.startswith("!corp in"):
+        time_left = time_regex.findall(message.content.lower())
+        dt = timedelta(**dict([(convert_time(s), int(t))
+                               for (t, s) in time_left]))
+        event_datetime = datetime.now() + dt
+        event_time_GMT = datetime.strftime(
+            event_datetime, '%d %b %Y %I:%M%p') + ' GMT'
+        event_time_EST = datetime.strftime(
+            event_datetime + timedelta(hours=-4), '%d %b %Y %I:%M%p') + ' EST'
+
+        embed = discord.Embed(title="__**Corporeal Beast Clan Event:**__", color=0x00ff00)
+        embed.add_field(
+            name="**Requirements:**", value='- A bunch of Games Necklaces and Ring of Duelings or a Friend with a Ornate rejuvenation pool and Ornate jewellery box in thier Player Owned House\n', inline=False)
+        embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
+
+        embed.add_field(
+            name="**Recommended Levels:**", value='75+ Hitpoints\n75+ Attack\75+ Strength\n75+ Defence\n85+ Range\n75+ Magic\n44+ Prayer (Eagle Eye, 70+ Piety, 74+ Rigour)\n', inline=False)
+        embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
+
+        embed.add_field(
+            name="**Suggested Gear:**", value='Bandos Basic Tank: http://prntscr.com/lu5tlb\nBandos Advanced Tank: http://prntscr.com/lu5twd\nBandos Melee Attacker: http://prntscr.com/lu5ubt\nBandos Ranged Attacker: http://prntscr.com/lu5uoi\nBandos Blowpipe Attacker: http://prntscr.com/lu7xo5\n*If using a blowpipe take addy/better darts\n*If using a crossbow use Diamond bolts (e) & Ruby bolts (e)\n *Spec weapons best to worst DWH>BGS or alternatively Crystal Halberd(i)>Dragon Halberd', inline=False)
+        embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
+
+        embed.add_field(
+            name="**Suggested Inventory Setup:**", value='Melee Inv: http://prntscr.com/lu6xno\nRanged Inv: http://prntscr.com/lu6xdm\nAdvanced Inv: http://prntscr.com/lu6xwa\n*Taking alchs allows you to hold more loot\n*Taking Bones to Peaches allows you to have a stackable food source\n*Full Guthans switch on the remaining mage, range and melee can extend kills per a trip', inline=False)
+        embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
+        old_msg=await client.send_message(message.channel, embed=embed)
 @client.event
 async def on_ready():
     print('Logged in as')

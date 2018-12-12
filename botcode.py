@@ -87,24 +87,24 @@ async def on_message(message):
 
         embed = discord.Embed(title="__**Corporeal Beast Clan Event:**__", color=0x00ff00)
         embed.add_field(
-            name="**Requirements:**", value='- A bunch of Games Necklaces and Ring of Duelings or a Friend with a Ornate rejuvenation pool and Ornate jewellery box in thier Player Owned House\n', inline=False)
+            name="**Requirements:**", value='A bunch of Games Necklaces and Ring of Duelings or a Friend with a Ornate rejuvenation pool and Ornate jewellery box in thier Player Owned House\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
-        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 
         embed.add_field(
             name="**Recommended Levels:**", value='75+ Hitpoints\n75+ Attack\75+ Strength\n75+ Defence\n85+ Range\n75+ Magic\n44+ Prayer (Eagle Eye, 70+ Piety, 74+ Rigour)\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
-        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 
         embed.add_field(
             name="**Suggested Gear:**", value='Bandos Basic Tank: http://prntscr.com/lu5tlb\nBandos Advanced Tank: http://prntscr.com/lu5twd\nBandos Melee Attacker: http://prntscr.com/lu5ubt\nBandos Ranged Attacker: http://prntscr.com/lu5uoi\nBandos Blowpipe Attacker: http://prntscr.com/lu7xo5\n*If using a blowpipe take addy/better darts\n*If using a crossbow use Diamond bolts (e) & Ruby bolts (e)\n *Spec weapons best to worst DWH>BGS or alternatively Crystal Halberd(i)>Dragon Halberd', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
-        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 
         embed.add_field(
             name="**Suggested Inventory Setup:**", value='Melee Inv: http://prntscr.com/lu6xno\nRanged Inv: http://prntscr.com/lu6xdm\nAdvanced Inv: http://prntscr.com/lu6xwa\n*Taking alchs allows you to hold more loot\n*Taking Bones to Peaches allows you to have a stackable food source\n*Full Guthans switch on the remaining mage, range and melee can extend kills per a trip', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
-        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
         old_msg=await client.send_message(message.channel, embed=embed)
 @client.event
 async def on_ready():

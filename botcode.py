@@ -102,7 +102,7 @@ async def on_message(message):
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 
         embed.add_field(
-            name="**Suggested Inventory Setup:**", value='Melee Inv: http://prntscr.com/lu6xno\nRanged Inv: http://prntscr.com/lu6xdm\nAdvanced Inv: http://prntscr.com/lu6xwa\n*Taking alchs allows you to hold more loot\n*Taking Bones to Peaches allows you to have a stackable food source\n*Full Guthans switch on the remaining mage, range and melee can extend kills per a trip', inline=False)
+            name="**Suggested Inventory Setup:**", value='Melee Inv: http://prntscr.com/lu6xno\nRanged Inv: http://prntscr.com/lu6xdm\nAdvanced Inv: http://prntscr.com/lu6xwa\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
         old_msg=await client.send_message(message.channel, embed=embed)

@@ -47,9 +47,9 @@ async def on_message(message):
                                for (t, s) in time_left]))
         event_datetime = datetime.now() + dt
         event_time_GMT = datetime.strftime(
-            event_datetime, '%d %b %Y %I:%M%p') + ' GMT'
+            event_datetime, '__**%d %b %Y %I:%M%p**__') + ' __**GMT**__'
         event_time_EST = datetime.strftime(
-            event_datetime + timedelta(hours=-4), '%d %b %Y %I:%M%p') + ' EST'
+            event_datetime + timedelta(hours=-4), '__**%d %b %Y %I:%M%p**__') + ' __**EST**__'
 
         embed = discord.Embed(title="__**Bandos Clan Event:**__", color=0x00ff00)
         embed.add_field(

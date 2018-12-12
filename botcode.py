@@ -53,14 +53,14 @@ async def on_message(message):
 
         embed = discord.Embed(title="__**Bandos Clan Event:**__", color=0x00ff00)
         embed.add_field(
-            name="**Requirements:**", value='- 80+ Hitpoints\n- 80+ Attack\n- 70+ Strength (Required, 80+ Recommended)\n- 70+ Defence (90+ if Tank)', inline=False)
+            name="**Requirements:**", value='- Completion of Death Plateau and start of Troll Stronghold to the point where you defeat Dad.\n- One rope is required to access the dungeon for the first time.\n- Level 70 Strength is required to enter Bandos Stronghold (cannot be boosted).\n- At least 43 Prayer for access to the protection prayers.\n-A hammer', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
         old_msg=await client.send_message(message.channel, embed=embed)
 
 
         embed.add_field(
-            name="**Quests:**", value='- Completion of Death Plateau and start of Troll Stronghold to the point where you defeat Dad.\n- One rope is required to access the dungeon for the first time.\n- Level 70 Strength is required to enter Bandos Stronghold (cannot be boosted).\n- At least 43 Prayer for access to the protection prayers.\n-A hammer', inline=False)
+            name="**Recommended Levels:**", value='- 80+ Hitpoints\n- 80+ Attack\n- 70+ Strength (Required, 80+ Recommended)\n- 70+ Defence (90+ if Tank)', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
         old_msg=await client.send_message(message.channel, embed=embed)

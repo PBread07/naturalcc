@@ -97,7 +97,7 @@ async def on_message(message):
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 
         embed.add_field(
-            name="**Suggested Gear:**", value='Bandos Basic Tank: http://prntscr.com/lu5tlb\nBandos Advanced Tank: http://prntscr.com/lu5twd\nBandos Melee Attacker: http://prntscr.com/lu5ubt\nBandos Ranged Attacker: http://prntscr.com/lu5uoi\nBandos Blowpipe Attacker: http://prntscr.com/lu7xo5\n*If using a blowpipe take addy/better darts\n*If using a crossbow use Diamond bolts (e) & Ruby bolts (e)\n *Spec weapons best to worst DWH>BGS or alternatively Crystal Halberd(i)>Dragon Halberd', inline=False)
+            name="**Suggested Gear:**", value='Melee Non-Void: http://prntscr.com/lu8g2p\nRange Non-Void: http://prntscr.com/lu8g8p\nVoid Melee (Meta): http://prntscr.com/lu8gsl', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 

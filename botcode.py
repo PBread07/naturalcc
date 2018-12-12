@@ -102,7 +102,7 @@ async def on_message(message):
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 
         embed.add_field(
-            name="**Suggested Inventory Setup:**", value='Void Melee Inv: http://prntscr.com/lu8mwl\n', inline=False)
+            name="**Suggested Inventory Setup:**", value='Void Melee Inv: http://prntscr.com/lu8mwl\n*Special weapons from best to worst DWH>BGS>Arclight>Crystal Halberd', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
         old_msg=await client.send_message(message.channel, embed=embed)

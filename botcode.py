@@ -12,7 +12,7 @@ def convert_time(time_str):
             return scale
 
 
-TOKEN = 'NTAxNzI0NDg5NTEyNjQ4NzM3.DszX7w.ovuuD0ftVr9zTL79xNeevSbavOM'
+TOKEN = 'NTAxNzI0NDg5NTEyNjQ4NzM3.DvMNRQ.kLi_CsXaH60sD57LT4q-6oF8E0s'
 client = discord.Client()
 
 

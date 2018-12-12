@@ -68,7 +68,7 @@ async def on_message(message):
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
 
         embed.add_field(
-            name="**Suggested Inventory Setup:**", value='Melee Inv: http://prntscr.com/lu6xno\nRanged Inv: http://prntscr.com/lu6xdm\nAdvanced Inv: http://prntscr.com/lu6xwa\n*Taking alchs and bones to peaches extendeds the amount of kills you get per a tripa\n*Full Guthans switch on the remaining mage, range and melee can extend kills per a trip', inline=False)
+            name="**Suggested Inventory Setup:**", value='Melee Inv: http://prntscr.com/lu6xno\nRanged Inv: http://prntscr.com/lu6xdm\nAdvanced Inv: http://prntscr.com/lu6xwa\n*Taking alchs allows you to hold more loot\nTaking Bones to Peaches allows you to have a stackable food source\n*Full Guthans switch on the remaining mage, range and melee can extend kills per a trip', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
         old_msg=await client.send_message(message.channel, embed=embed)

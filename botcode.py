@@ -38,7 +38,7 @@ async def on_message(message):
         embed.add_field(name="Disc ID", value=user.id, inline=True)
         embed.add_field(name="Joined", value=joined_at_str, inline=True)
         embed.add_field(name="Role", value=user.top_role)
-        embed.set_thumbnail(url=https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339)
+        embed.set_thumbnail(url=user.avatar_url)
         await client.send_message(message.channel, embed=embed)
 
     elif message.content.startswith("!bandos in"):
@@ -55,23 +55,23 @@ async def on_message(message):
         embed.add_field(
             name="**Requirements:**", value='- Completion of Death Plateau and start of Troll Stronghold to the point where you defeat Dad.\n- One rope is required to access the dungeon for the first time.\n- Level 70 Strength is required to enter Bandos Stronghold (cannot be boosted).\n- At least 43 Prayer for access to the protection prayers.\n-A hammer\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
-        embed.set_thumbnail(url=message.author.avatar_url)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
 
         embed.add_field(
             name="**Recommended Levels:**", value='80+ Hitpoints\n80+ Attack\n80+ Strength\n70+ Defence (90+ if Tank)\n80+ Range\n75+ Magic\n44+ Prayer (Eagle Eye, 70+ Piety, 74+ Rigour)\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
-        embed.set_thumbnail(url=message.author.avatar_url)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
 
         embed.add_field(
             name="**Suggested Gear:**", value='Bandos Basic Tank: http://prntscr.com/lu5tlb\nBandos Advanced Tank: http://prntscr.com/lu5twd\nBandos Melee Attacker: http://prntscr.com/lu5ubt\nBandos Ranged Attacker: http://prntscr.com/lu5uoi\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
-        embed.set_thumbnail(url=message.author.avatar_url)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
 
         embed.add_field(
             name="**Suggested Inventory Setup:**", value='Melee Inv: http://prntscr.com/lu6xno\nRanged Inv: http://prntscr.com/lu6xdm\nAdvanced Inv: http://prntscr.com/lu6xwa\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
-        old_msg=await client.send_message(message.channel, embed=embed)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339')
 
 
 @client.event
@@ -82,5 +82,4 @@ async def on_ready():
     print('------')
 
 
-    
 client.run(TOKEN)

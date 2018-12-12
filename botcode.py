@@ -87,7 +87,7 @@ async def on_message(message):
 
         embed = discord.Embed(title="__**Corporeal Beast Clan Event:**__", color=0x00ff00)
         embed.add_field(
-            name="**Requirements:**", value='A bunch of Games Necklaces and Ring of Duelings or a Friend with a Ornate rejuvenation pool and Ornate jewellery box in thier Player Owned House\n', inline=False)
+            name="**Requirements:**", value='A bunch of Games Necklaces and Ring of Duelings or a Friend with a Ornate Rejuvenation Pool and Ornate jewellery Box in thier Player Owned House\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/5/5c/Corporeal_Beast.png/revision/latest?cb=20160212005921')
 

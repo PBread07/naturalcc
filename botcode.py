@@ -56,14 +56,11 @@ async def on_message(message):
             name="**Requirements:**", value='- Completion of Death Plateau and start of Troll Stronghold to the point where you defeat Dad.\n- One rope is required to access the dungeon for the first time.\n- Level 70 Strength is required to enter Bandos Stronghold (cannot be boosted).\n- At least 43 Prayer for access to the protection prayers.\n-A hammer', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
-        old_msg=await client.send_message(message.channel, embed=embed)
-
 
         embed.add_field(
             name="**Recommended Levels:**", value='80+ Hitpoints\n80+ Attack\n80+ Strength\n70+ Defence (90+ if Tank)\n80+ Range\n75+ Magic\n44+ Prayer (Eagle Eye, 70+ Piety, 74+ Rigour)', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url=message.author.avatar_url)
-        old_msg=await client.send_message(message.channel, embed=embed)
 
         embed.add_field(
             name="**Suggested Gear:**", value='Bandos Basic Tank: http://prntscr.com/lu5tlb\nBandos Advanced Tank: http://prntscr.com/lu5twd\nBandos Melee Attacker: http://prntscr.com/lu5ubt\nBandos Ranged Attacker: http://prntscr.com/lu5uoi', inline=False)

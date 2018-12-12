@@ -38,7 +38,7 @@ async def on_message(message):
         embed.add_field(name="Disc ID", value=user.id, inline=True)
         embed.add_field(name="Joined", value=joined_at_str, inline=True)
         embed.add_field(name="Role", value=user.top_role)
-        embed.set_thumbnail(url=user.avatar_url)
+        embed.set_thumbnail(url=https://vignette.wikia.nocookie.net/2007scape/images/b/b8/General_Graardor.png/revision/latest?cb=20160325023339)
         await client.send_message(message.channel, embed=embed)
 
     elif message.content.startswith("!bandos in"):

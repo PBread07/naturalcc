@@ -170,6 +170,25 @@ async def on_message(message):
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/f/fd/Kree%27arra.png/revision/latest/scale-to-width-down/699?cb=20160713191756')
         old_msg=await client.send_message(message.channel, embed=embed)
 
+    elif message.content.startswith("!learner r1"):
+        time_left = time_regex.findall(message.content.lower())
+        dt = timedelta(**dict([(convert_time(s), int(t))
+                               for (t, s) in time_left]))
+        event_datetime = datetime.now() + dt
+        event_time_GMT = datetime.strftime(
+            event_datetime, '%d %b %Y %I:%M%p') + ' GMT'
+        event_time_EST = datetime.strftime(
+            event_datetime + timedelta(hours=-4), '%d %b %Y %I:%M%p') + ' EST'
+
+        embed = discord.Embed(title="__**Chambers of Xeric Learner Event:**__", color=0x00ff00)
+        embed.add_field(
+            name="**Requirements:**", value='- - Required: The min required gear as shown in #raids-1. If you do not have these, this event isn’t for you just yet!.\- Important: All major drops will be split equally. If you are an Ironman and don’t have a main that can pay out splits, waiting for the next event (FFA) would be required.\n- No KC needed\n- Banana ranks and up\n- Ability to listen in on discord but no need to speak\nIf you’ve not done raids before or do not know what it is, please do a bit of research beforehand. I recommend watching the Theoatrix tutorial on YouTube and looking at the #raids-1 channel. Asking any experienced raiders in the CC for advice ahead of the event would be a good idea also.\n', inline=False)
+        embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/d/d3/Great_Olm.png/revision/latest?cb=20180505053243')
+
+        embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
+        embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/d/d3/Great_Olm.png/revision/latest?cb=20180505053243')
+        old_msg=await client.send_message(message.channel, embed=embed)
 
 
 

@@ -133,7 +133,7 @@ async def on_message(message):
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/f/fb/Commander_Zilyana.png/revision/latest?cb=20160804022807')
 
         embed.add_field(
-            name="**Suggested Inventory Setup:**", value='Range Inv: https://prnt.sc/n594p1\n*This boss is killed using a kiting method. While the boss is aggro on you, run away to avoid its melee attacks. While the boss is aggro on another member of the team, you can stand still and attack it/n*Taking alchs allows you to hold more loot./n*Taking Bones to Peaches allows you to have a stackable food source./n*Guthans armor set is generally not useful for this boss. You wont take much damage here..', inline=False)
+            name="**Suggested Inventory Setup:**", value='Range Inv: https://prnt.sc/n594p1\n*This boss is killed using a kiting method. While the boss is aggro on you, run away to avoid its melee attacks. While the boss is aggro on another member of the team, you can stand still and attack it\n*Taking alchs allows you to hold more loot.\n*Taking Bones to Peaches allows you to have a stackable food source.\n*Guthans armor set is generally not useful for this boss. You wont take much damage here.', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/f/fb/Commander_Zilyana.png/revision/latest?cb=20160804022807')
         old_msg=await client.send_message(message.channel, embed=embed)

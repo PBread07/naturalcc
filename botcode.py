@@ -188,7 +188,7 @@ async def on_message(message):
 
 
         embed.add_field(
-            name="**Important Info::**", value='\n-All major drops will be split equally. If you are an Ironman and don’t have a main that can pay out splits, waiting for the next event (FFA) would be required.\n', inline=False)
+            name="**Important Info::**", value='\nAll major drops will be split equally. If you are an Ironman and don’t have a main that can pay out splits, waiting for the next event (FFA) would be required.\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/d/d3/Great_Olm.png/revision/latest?cb=20180505053243')
 

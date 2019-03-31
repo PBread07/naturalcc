@@ -150,7 +150,7 @@ async def on_message(message):
 
         embed = discord.Embed(title="__**Armadyl God Wars Event:**__", color=0x00ff00)
         embed.add_field(
-            name="**Requirements:**", value='- Completion of Death Plateau and start of Troll Stronghold to the point where you defeat Dad.\n- One rope is required to access the dungeon for the first time.\n- Level 70 Ranged is required to enter Armadyls Encampment (cannot be boosted).\n- At least 43 Prayer for access to the protection prayers.\n- Two additional ropes  are required to access the Saradomin encampment for the first time.\n', inline=False)
+            name="**Requirements:**", value='- Completion of Death Plateau and start of Troll Stronghold to the point where you defeat Dad.\n- One rope is required to access the dungeon for the first time.\n- Level 70 Ranged is required to enter Armadyls Encampment (cannot be boosted).\n- At least 43 Prayer for access to the protection prayers.\n- Two additional ropes  are required to access the Armadyls Encampment for the first time.\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/f/fd/Kree%27arra.png/revision/latest/scale-to-width-down/699?cb=20160713191756')
 

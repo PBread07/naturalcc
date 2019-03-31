@@ -182,13 +182,13 @@ async def on_message(message):
 
         embed = discord.Embed(title="__**Chambers of Xeric Learner Event:**__", color=0x00ff00)
         embed.add_field(
-            name="**Requirements:**", value='The minimum required gear as shown in #raids-1. If you do not have these, this event isn’t for you just yet!\n- No KC needed\n- Banana ranks and up\n- Ability to listen in on discord but no need to speak\n', inline=False)
+            name="**Requirements:**", value='The minimum required gear as shown in #raids-1. If you do not have these, this event isn’t for you just yet!\n- No KC needed\n- Banana ranks and up.\n- Ability to listen in on discord, speaking isnt required.\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/d/d3/Great_Olm.png/revision/latest?cb=20180505053243')
 
 
         embed.add_field(
-            name="**Important Info::**", value='\nAll major drops will be split equally. If you are an Ironman and don’t have a main that can pay out splits, waiting for the next event (FFA) would be required.\n', inline=False)
+            name="**Important Info:**", value='\nAll major drops will be split equally. If you are an Ironman and don’t have a main that can pay out splits, waiting for the next event (FFA) would be required.\n', inline=False)
         embed.set_footer(text=event_time_EST + ' | ' + event_time_GMT)
         embed.set_thumbnail(url='https://vignette.wikia.nocookie.net/2007scape/images/d/d3/Great_Olm.png/revision/latest?cb=20180505053243')
 
